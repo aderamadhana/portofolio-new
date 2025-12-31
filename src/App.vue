@@ -246,78 +246,31 @@
         </div>
 
         <div class="row justify-content-center g-4">
-          <div class="col-lg-4">
-            <div class="contact-info-card h-100">
-              <div class="contact-info-item">
-                <div class="contact-icon mb-3">
+          <div class="col-lg-10">
+            <div class="contact-card">
+              <div class="contact-item">
+                <div class="icon email">
                   <i class="bi bi-envelope-fill"></i>
                 </div>
-                <h5 class="fw-bold mb-2">Email</h5>
-                <a href="mailto:sanade2034@gmail.com" class="text-muted text-decoration-none">
-                  sanade2034@gmail.com
-                </a>
+                <h5>Email</h5>
+                <p>sanade2034@gmail.com</p>
               </div>
 
-              <div class="contact-info-item">
-                <div class="contact-icon mb-3">
+              <div class="contact-item">
+                <div class="icon linkedin">
                   <i class="bi bi-linkedin"></i>
                 </div>
-                <h5 class="fw-bold mb-2">LinkedIn</h5>
-                <a
-                  href="https://linkedin.com/in/yourusername"
-                  target="_blank"
-                  class="text-muted text-decoration-none"
-                >
-                  Connect with me
-                </a>
+                <h5>LinkedIn</h5>
+                <p>Connect with me</p>
               </div>
 
-              <div class="contact-info-item">
-                <div class="contact-icon mb-3">
+              <div class="contact-item">
+                <div class="icon time">
                   <i class="bi bi-clock-fill"></i>
                 </div>
-                <h5 class="fw-bold mb-2">{{ t.responseTime }}</h5>
-                <p class="text-muted mb-0">{{ t.responseTimeDesc }}</p>
+                <h5>Waktu Respon</h5>
+                <p>Dalam 24 jam</p>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="contact-form-card">
-              <form @submit.prevent="handleSubmit">
-                <div class="form-group-animated mb-4">
-                  <input type="text" v-model="formData.name" class="form-control-modern" required />
-                  <label class="form-label-floating">{{ t.yourName }}</label>
-                </div>
-
-                <div class="form-group-animated mb-4">
-                  <input
-                    type="email"
-                    v-model="formData.email"
-                    class="form-control-modern"
-                    required
-                  />
-                  <label class="form-label-floating">{{ t.emailAddress }}</label>
-                </div>
-
-                <div class="form-group-animated mb-4">
-                  <textarea
-                    v-model="formData.message"
-                    rows="5"
-                    class="form-control-modern"
-                    required
-                  ></textarea>
-                  <label class="form-label-floating">{{ t.yourMessage }}</label>
-                </div>
-
-                <button type="submit" class="btn-send-message" :disabled="isSubmitting">
-                  <span v-if="!isSubmitting" class="btn-text">{{ t.sendMessage }}</span>
-                  <span v-else class="btn-text">{{ t.sending }}</span>
-                  <span class="btn-icon">
-                    <i class="bi bi-arrow-right"></i>
-                  </span>
-                </button>
-              </form>
             </div>
           </div>
         </div>
@@ -334,14 +287,14 @@
           <div class="col-md-6 text-center text-md-end">
             <div class="d-flex gap-3 justify-content-center justify-content-md-end">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/aderamadhana"
                 target="_blank"
                 class="text-secondary text-decoration-none"
               >
                 <i class="bi bi-github fs-5"></i>
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/ade-ramadhana-p-abb489196/"
                 target="_blank"
                 class="text-secondary text-decoration-none"
               >
@@ -420,7 +373,7 @@ export default {
           sending: 'Mengirim...',
           responseTime: 'Waktu Respon',
           responseTimeDesc: 'Dalam 24 jam',
-          footer: '© 2024 Ade Ramadhana Pratama. Dibuat dengan passion dan code.',
+          footer: '© 2026 Ade Ramadhana Pratama. Dibuat dengan passion dan code.',
           successMessage: 'Terima kasih! Pesan Anda telah terkirim.',
         },
         en: {
@@ -467,7 +420,7 @@ export default {
           sending: 'Sending...',
           responseTime: 'Response Time',
           responseTimeDesc: 'Within 24 hours',
-          footer: '© 2024 Ade Ramadhana Pratama. Built with passion and code.',
+          footer: '© 2026 Ade Ramadhana Pratama. Built with passion and code.',
           successMessage: 'Thank you! Your message has been sent.',
         },
       },
